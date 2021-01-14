@@ -6,14 +6,14 @@ using namespace std;
 
 int main()
 {
-	Mat img = imread("./Images/a.jpg");
+	Mat img = imread("./Images/abc.jpg");
 	if (img.empty())
 	{
-		cout << "Error !!!" << endl << "No image to Read...";
+		cout << "Error !!!" << endl << "No image to Read..."<<endl;
 		return -1;
 	}
 	imshow("image", img);
-	Mat img1 = imread("./Images/a.jpg", IMREAD_GRAYSCALE);
+	Mat img1 = imread("./Images/abc.jpg", IMREAD_GRAYSCALE);
 	imshow("Grayscale Image", img1);
 	waitKey();
 	return 0;
@@ -39,7 +39,7 @@ Mat rotate(Mat src, double angle)   //rotate function returning mat object with 
 
 int main()
 {
-    Mat src = imread("./Images/b.jpg");           //reading image file in mat object
+    Mat src = imread("./Images/b1.jpg");           //reading image file in mat object
 
     Mat dst;      //Mat object for output image file
     dst = rotate(src, 45);       //rotating image with 45 degree angle
